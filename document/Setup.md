@@ -24,7 +24,7 @@ And change the ports of device by following step.
      - USB-SERIAL CH340 (Button LED) : COM21
 3. Replug it.
 
-Than your device manager should be like this.
+Than your device manager should be look like this.  
 ![](</attachment/image/Setup Controller-Device Manager.png>)
 
 ### 3. Update driver.
@@ -35,8 +35,8 @@ So updating driver is recommended, specifically IO4 input.
 [Here](https://youtu.be/qDsitksnLpw)'s updating tutoral video.
 Tutorial video also includes about installing MelonLoader Mod for HID Input. To just install IO4 input, just ignore it.
 
-[ISPTool program](</attachment/file/driver/ISPTool.zip> "download")
-[MelonLoader + HID Input Mod](</attachment/file/driver/MelonLoader.zip> "download")
+[ISPTool program](</attachment/file/driver/ISPTool.zip> "download")  
+[MelonLoader + HID Input Mod](</attachment/file/driver/MelonLoader.zip> "download")  
 
 - [IO4 Driver](</attachment/file/driver/WM_DX_V3.04-IO4-1P.bin> "download")
 	- After you update it, open `segatools.ini` and go to `[io4]`, add `enable=0` below it like following.
