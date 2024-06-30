@@ -47,7 +47,7 @@ My recommendation is buy a product that can support more than 70kg.
 
 The reference table size is same as following. (D60 W80 H80)
 
-![](<attachment/image/Reference Table Size.png | 190>)
+![](</attachment/image/Reference Table Size.png>)
 
 Here's recommended products you can choose
 
@@ -72,7 +72,7 @@ Buy to your taste.
 
 The default button is quite playable. However, if you want a better experience, you can choose custom buttons. There are various types of custom buttons available. Here’s a comparison chart, and you can also watch a comparison [video](https://www.youtube.com/watch?v=gLQwiHrYj9o) made by Jacky's Buttons.
 
-![](<attachment/image/Custom button comparison.png>)
+![](</attachment/image/Custom button comparison.png>)
 
 The most recommended option is the Rabbit button, which you can purchase from [here](https://item.taobao.com/item.htm?id=660013732031&skuId=5395223410039&spm=a1z10.1-c.w4004-24097871292.3.37221e09DSieDY). 
 Make sure to purchase a special task fee equal to the number of 8 full buttons.
@@ -99,7 +99,7 @@ The brand doesn't matter. Use anything.
 [EVA Foam Tape](https://www.amazon.com/Sponge-Equipment-Adhesive-Waterproof-Thickness/dp/B0C3VJM6Z2) is used to make button less noisy.
 Just attach the tape as shown below.
 
-![](<attachment/image/EVA Foam tape example.png | 300>)
+![](</attachment/image/EVA Foam tape example.png>)
 
 ### Lubricanting grease
 
@@ -107,8 +107,8 @@ Lubricanting grease is used to make buttons feel more soft & comfortable.
 Official's recommendation is [Solvest 248](https://stt-inc.co.jp/en/product-info/grease/), but it is too hard to get from other countries, so using other one is okay.
 I recommend a grease that can be squeezed out like toothpaste.
 
-![](<attachment/image/Lubricanting grease.png | 200>)
+![](</attachment/image/Lubricanting grease.png>)
 
 You can use it by just spreading it to leaf spring like following.
 
-![](<attachment/image/Lubricanting grease example.png | 600>)
+![](</attachment/image/Lubricanting grease example.png>)
