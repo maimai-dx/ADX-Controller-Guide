@@ -23,6 +23,12 @@ And change the ports of device by following step.
      - USB Serial Device (Touch Panel) : COM3
      - USB-SERIAL CH340 (Button LED) : COM21
 3. Replug it.
+4. Open `mai2.ini` file, and change following values below `[AM]`.
+```
+Target=1
+DummyTouchPanel=0
+DummyLED=0
+```
 
 Than your device manager should be look like this.  
 ![](</attachment/image/Setup Controller-Device Manager.png>)
