@@ -1,0 +1,1 @@
+To contribute to this document, [Obsidian](https://obsidian.md/) is recommended to edit this document.
