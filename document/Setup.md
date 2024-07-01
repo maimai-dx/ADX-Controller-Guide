@@ -80,13 +80,13 @@ Segatools provides aime reader simulator in it.
 first of all, open `segatools.ini`, check `enable=1` exists under `[aime]`. 
 If not, modify or add `enable` to enable it.
 
-![](NoAimeReader_1.png)
+![](</attachment/image/NoAimeReader_1.png>)
 
 And open `DEVICE` folder, and create `aime.txt` with 20 random number like below.
 Using same value with below is **NOT RECOMMENDED**.
 
-![](NoAimeReader_2.png)  
-![](NoAimeReader_3.png)
+![](</attachment/image/NoAimeReader_2.png>)  
+![](</attachment/image/NoAimeReader_3.png>)
 
 
 ### Setup with aime reader
@@ -104,18 +104,18 @@ And change the device connection by following step.
 	1. If there's any device using COM1, change it to other any port like `COM2`.
 3. Change `USB Serial Device`'s baudrate to `115200`.
     - Right click > Properties > Port Settings > Bits per second : 115200
-	    - ![](WithAimeReader_1.png)
+	    - ![](</attachment/image/WithAimeReader_1.png>)
 4. Change `USB Serial Device`'s Port to COM1.
 	- Right click > Properties > Port Settings > Advanced > COM Port Number > `COM1`
 
 
 Then your device manager should be look like this.  
 
-![](WithAimeReader_2.png)
+![](</attachment/image/WithAimeReader_2.png>)
 
 Then, open `segatools.ini`, under `[aime]`, modify `enable` to `0` to disable aime reader simulation. 
 
-![](WithAimeReader_3.png)
+![](</attachment/image/WithAimeReader_3.png>)
 
 ## Setup data server
 
@@ -145,8 +145,8 @@ And change the `core.yaml`'s `aimedb.key` to `Copyright(C)SEGA`
 To preventing game freeze at specific time everyday, change `core.yaml`'s value to following value.
 ```yaml
 title:
-	reboot_start_time: "06:59"
-	reboot_end_time: "07:00" # this must be set to 7:00 am for some game, please do not change it
+    reboot_start_time: "06:59"
+    reboot_end_time: "07:00" # this must be set to 7:00 am for some game, please do not change it
 ```
 
 And open cmd, type `ipconfig` and find your Internal network IP like starting with `10.~`, `192.~`, `172.~`.
@@ -160,26 +160,26 @@ First, enable Hyper-V by following this [manual](https://learn.microsoft.com/en-
 
 And Open `Hyper-V Manager` and select your `Desktop` and Open `Virtual Switch Manager`.
 
-![](HyperV_1.png)
+![](</attachment/image/HyperV_1.png>)
 
 And select `New virtual network switch` > `Internal` > `Create Virtual Switch`
 
-![](HyperV_2.png)
+![](</attachment/image/HyperV_2.png>)
 
 Rename it to `maimaidx` and press `OK`.
 
-![](HyperV_3.png)
+![](</attachment/image/HyperV_3.png>)
 
 And press `Win + R` and type `ncpa.cpl`, and press `Enter` to open `Network Connections` page.
 Then right click `vEthernet (maimaidx)` > click `Properties` > select`Internet Protocol Version 4 (TCP/IPv4)` > click `Properties`
 
-![](HyperV_4.png)
-![](HyperV_5.png)
+![](</attachment/image/HyperV_4.png>)
+![](</attachment/image/HyperV_5.png>)
 
 And modify values like below then click OK > Yes.
 Your server IP is now `192.168.2.100`. modify `segatools.ini`, and change `[dns]`'s `[default]` value to this value.
 
-![](HyperV_6.png)
+![](</attachment/image/HyperV_6.png>)
 
 
 ### Setup [AquaDX (Unstable)](https://github.com/hykilpikonna/AquaDX)
@@ -207,18 +207,18 @@ Second, open `config_commons.json` file and modify `credit` part like below. Thi
 Third, double click `start.bat` to start game and wait.
 You'll get stuck on this screen.
 
-![](MaimaiHdd_1.png)
+![](</attachment/image/MaimaiHdd_1.png>)
 
 Press the second circular button on right side to enter this menu,
 And disable following menu's value using number 1, 4, 5 button on main display.
 Then select `終了` to quit menu.
 
-![](MaimaiHdd_2.png)
-![](MaimaiHdd_3.png)
+![](</attachment/image/MaimaiHdd_2.png>)
+![](</attachment/image/MaimaiHdd_3.png>)
 
 Then you'll get this screen.
 
-![[MaimaiHdd_4.png]]
+![](</attachment/image/MaimaiHdd_4.png>)
 
 Congratulations! You finllay finished setup game. You can create an account and enjoy the game by pressing the `enter` key or tapping the card.  
 Enjoy!
