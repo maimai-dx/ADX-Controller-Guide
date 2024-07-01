@@ -117,3 +117,62 @@ Then, open `segatools.ini`, under `[aime]`, modify `enable` to `0` to disable ai
 
 ![](WithAimeReader_3.png)
 
+## Setup data server
+
+Data server is used to save play record, rating, etc. If you are too lazy to setup it, there's public data servers. But it can be closed any time. Do whatever you want.
+
+### Setup online server
+
+Setting up an online server is really easy, but please keep in mind that servers can always go down unexpectedly.
+
+To setup online server, just open `segatools.ini`, and change `[dns]`'s `[default]` value to server url you want to setup.
+
+Here's the list of online servers.
+
+| URL        | Supported Version | WebUI |
+| ---------- | ----------------- | ----- |
+| ea.msm.moe | ?                 | ?     |
+
+### Setup [ARTEMiS](https://gitea.tendokyu.moe/Hay1tsme/artemis)
+
+[ARTEMiS](https://gitea.tendokyu.moe/Hay1tsme/artemis) is the network service emulator for games running SEGA'S ALL.NET service.
+You should run it on a maimai pc or a PC using same router with maimai pc.
+To use it, download source code from [develop branch](https://gitea.tendokyu.moe/Hay1tsme/artemis/src/branch/develop), and follow the [INSTALL_WINDOWS](https://gitea.tendokyu.moe/Hay1tsme/artemis/src/branch/develop/docs/INSTALL_WINDOWS.md) guide.
+And open cmd, type `ipconfig` and find your Internal network IP like starting with `10.~`, `192.~`, `172.~`.
+Open  `segatools.ini`, and change `[dns]`'s `[default]` value to server your server IP.
+
+#### If you installed server at maimai pc and there's no Internal network IP
+
+If you installed artemis server at maimai pc with no router, you are not not able to find Internel network IP. Since maimai does not allow a server with IP `127.0.0.1`, that we need to create a virtual IP using Hyper-V.
+
+First, enable Hyper-V by following this [manual](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).  
+
+And Open `Hyper-V Manager` and select your `Desktop` and Open `Virtual Switch Manager`.
+
+![](HyperV_1.png)
+
+And select `New virtual network switch` > `Internal` > `Create Virtual Switch`
+
+![](HyperV_2.png)
+
+Rename it to `maimaidx` and press `OK`.
+
+![](HyperV_3.png)
+
+And press `Win + R` and type `ncpa.cpl`, and press `Enter` to open `Network Connections` page.
+Then right click `vEthernet (maimaidx)` > click `Properties` > select`Internet Protocol Version 4 (TCP/IPv4)` > click `Properties`
+
+![](HyperV_4.png)
+![](HyperV_5.png)
+
+And modify values like below then click OK > Yes.
+Your server IP is now `192.168.2.100`. modify `segatools.ini`, and change `[dns]`'s `[default]` value to this value.
+
+![](HyperV_6.png)
+
+
+### Setup [AquaDX (Unstable)](https://github.com/hykilpikonna/AquaDX)
+
+[AquaDX](https://github.com/hykilpikonna/AquaDX) is multipurpose game server powered by Spring Boot, for ALL.Net-based games.
+It is originally created by [samnyan](https://github.com/samnyan), but it is abandoned. Than [hykilpikonna](https://github.com/hykilpikonna)  is back to maintenance and is currently working on BUDDiES update support.
+To install AquaDX, [follow this manual](https://github.com/hykilpikonna/AquaDX?tab=readme-ov-file#usage-v1-developmental-preview).
