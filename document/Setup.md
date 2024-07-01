@@ -138,6 +138,17 @@ Here's the list of online servers.
 [ARTEMiS](https://gitea.tendokyu.moe/Hay1tsme/artemis) is the network service emulator for games running SEGA'S ALL.NET service.
 You should run it on a maimai pc or a PC using same router with maimai pc.
 To use it, download source code from [develop branch](https://gitea.tendokyu.moe/Hay1tsme/artemis/src/branch/develop), and follow the [INSTALL_WINDOWS](https://gitea.tendokyu.moe/Hay1tsme/artemis/src/branch/develop/docs/INSTALL_WINDOWS.md) guide.
+And change the `core.yaml`'s `aimedb.key` to `Copyright(C)SEGA`
+- This is just a sample key for aimedb configuration.
+- It does not imply any copyright or association with SEGA.
+
+To preventing game freeze at specific time everyday, change `core.yaml`'s value to following value.
+```yaml
+title:
+	reboot_start_time: "06:59"
+	reboot_end_time: "07:00" # this must be set to 7:00 am for some game, please do not change it
+```
+
 And open cmd, type `ipconfig` and find your Internal network IP like starting with `10.~`, `192.~`, `172.~`.
 Open  `segatools.ini`, and change `[dns]`'s `[default]` value to server your server IP.
 
