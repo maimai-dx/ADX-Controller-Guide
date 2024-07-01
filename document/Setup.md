@@ -152,6 +152,16 @@ title:
 And open cmd, type `ipconfig` and find your Internal network IP like starting with `10.~`, `192.~`, `172.~`.
 Open  `segatools.ini`, and change `[dns]`'s `[default]` value to server your server IP.
 
+#### Auto start server on start pc
+ 
+Press `Win + R` and type `shell:startup` to open startup folder.  
+And create `artemis.bat` with following content. You should modify {Path to artemis} to yours. 
+```bat
+@echo off
+cd {Path to artemis}
+start /min cmd /c "python index.py"
+```
+
 #### If you installed server at maimai pc and there's no Internal network IP
 
 If you installed artemis server at maimai pc with no router, you are not not able to find Internel network IP. Since maimai does not allow a server with IP `127.0.0.1`, that we need to create a virtual IP using Hyper-V.
@@ -219,6 +229,16 @@ Then select `終了` to quit menu.
 Then you'll get this screen.
 
 ![](</attachment/image/MaimaiHdd_4.png>)
+
+#### Auto start maimai on start pc
+ 
+Press `Win + R` and type `shell:startup` to open startup folder.  
+And create `maimai.bat` with following content. You should modify {Path to maimai start.bat} to yours.
+```bat
+cd {Path to maimai start.bat}
+start.bat
+```
+
 
 Congratulations! You finllay finished setup game. You can create an account and enjoy the game by pressing the `enter` key or tapping the card.  
 Enjoy!
