@@ -16,6 +16,7 @@ The following must be satisfied.
 - Thickness : equal or thinner than 6.4cm
 
 Here's recommended products you can choose
+My personal recomendation is `Philips 438p1`. The most important part is latency, frame rate is not important as long as it is 60fps.
 
 | Product                                                                                                                                                            | Price | Latency  | FPS | Resolution | Color Field |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- | -------- | --- | ---------- | ----------- |
@@ -29,14 +30,16 @@ Here's recommended products you can choose
 The specifications of the original maimai DX board (ALLS HX-2) are same as following.
 But ADX Controller's monitor is UHD, so It is recommended to use more powerful VGA.
 It is okay to use your current PC.
+But it is not recommended to buy intel 12th gen or above. Although maimai supports windows 11 (thanks to segatools), original maimai is running on windows 10. Intel 12th gen or above has big-little core structure, which can cause unexpected performance issue. If you are already using it, just keep using it. This only applies if you want to buy a new computer.
 
-| Part    | Model                 |
-| ------- | --------------------- |
-| CPU     | i3 8100               |
-| RAM     | DDR4 8GB              |
-| VGA     | GTX 1050Ti            |
-| Storage | SSD 128GB + HDD 500GB |
-| Monitor | FHD                   |
+| Part    | Model                     |
+| ------- | ------------------------- |
+| CPU     | i3 8100                   |
+| RAM     | DDR4 8GB                  |
+| VGA     | GTX 1050Ti                |
+| Storage | SSD 128GB + HDD 500GB     |
+| OS      | Windows 10 IoT Enterprise |
+| Monitor | FHD                       |
 
 
 ## Table
