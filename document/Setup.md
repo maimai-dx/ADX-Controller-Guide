@@ -187,3 +187,38 @@ Your server IP is now `192.168.2.100`. modify `segatools.ini`, and change `[dns]
 [AquaDX](https://github.com/hykilpikonna/AquaDX) is multipurpose game server powered by Spring Boot, for ALL.Net-based games.
 It is originally created by [samnyan](https://github.com/samnyan), but it is abandoned. Than [hykilpikonna](https://github.com/hykilpikonna)  is back to maintenance and is currently working on BUDDiES update support.
 To install AquaDX, [follow this manual](https://github.com/hykilpikonna/AquaDX?tab=readme-ov-file#usage-v1-developmental-preview).
+
+## Setup maimai HDD
+
+maimai is created using unity.
+to run the game there's some programs you need to install.
+
+First, Download and install `VisualCppRedist_AIO_x86_64.exe` from [here](https://github.com/abbodi1406/vcredist/releases).
+
+Second, open `config_commons.json` file and modify `credit` part like below. This enables freeplay.
+```json
+"credit": {
+    "enable" : true,
+    "max_credit" : 24,
+    "config" : { "freeplay" : true }
+},
+```
+
+Third, double click `start.bat` to start game and wait.
+You'll get stuck on this screen.
+
+![](MaimaiHdd_1.png)
+
+Press the second circular button on right side to enter this menu,
+And disable following menu's value using number 1, 4, 5 button on main display.
+Then select `終了` to quit menu.
+
+![](MaimaiHdd_2.png)
+![](MaimaiHdd_3.png)
+
+Then you'll get this screen.
+
+![[MaimaiHdd_4.png]]
+
+Congratulations! You finllay finished setup game. You can create an account and enjoy the game by pressing the `enter` key or tapping the card.  
+Enjoy!
