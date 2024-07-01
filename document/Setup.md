@@ -30,7 +30,7 @@ DummyTouchPanel=0
 DummyLED=0
 ```
 
-Than your device manager should be look like this.  
+Then your device manager should be look like this.  
 ![](</attachment/image/Setup Controller-Device Manager.png>)
 
 ### 3. Update driver.
@@ -67,4 +67,53 @@ After exiting the program, plug and unplug the USB again
 Here's the recommended touch sensitivity from yuan. 
 
 ![](</attachment/image/Adjust touch sensitivity_Recommended value.png>)
+
+
+## Setup aime reader
+
+There are various ways to setup aime reader.
+Depending on the item you purchased, proceed with one of the following steps.
+
+### Setup without aime reader
+
+Segatools provides aime reader simulator in it.
+first of all, open `segatools.ini`, check `enable=1` exists under `[aime]`. 
+If not, modify or add `enable` to enable it.
+
+![](NoAimeReader_1.png)
+
+And open `DEVICE` folder, and create `aime.txt` with 20 random number like below.
+Using same value with below is **NOT RECOMMENDED**.
+
+![](NoAimeReader_2.png)  
+![](NoAimeReader_3.png)
+
+
+### Setup with aime reader
+
+Segatools provides card reader simulator in it. To use own card reader, you have to disable original one.  
+first, connect your aime reader to PC.
+
+And change the device connection by following step.
+
+> **Do not modify existing USB Serial Device (COM3) device.** It is touch panel.
+
+ 1. Open Device Manager
+    - Search > Device Manager > Ports (COM & LPT)
+2. Confirm that there's no device is using COM1.
+	1. If there's any device using COM1, change it to other any port like `COM2`.
+3. Change `USB Serial Device`'s baudrate to `115200`.
+    - Right click > Properties > Port Settings > Bits per second : 115200
+	    - ![](WithAimeReader_1.png)
+4. Change `USB Serial Device`'s Port to COM1.
+	- Right click > Properties > Port Settings > Advanced > COM Port Number > `COM1`
+
+
+Then your device manager should be look like this.  
+
+![](WithAimeReader_2.png)
+
+Then, open `segatools.ini`, under `[aime]`, modify `enable` to `0` to disable aime reader simulation. 
+
+![](WithAimeReader_3.png)
 
