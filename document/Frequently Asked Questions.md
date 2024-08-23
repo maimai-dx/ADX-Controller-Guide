@@ -41,5 +41,6 @@ If the problem continues, the solution may depend on your firmware.
 ### If you are using HID Input
 - Check you installed HID Input unity mod.
 - Check MelonModLoader console starts on game startup.
+- Open `segatools.ini` file. Check there's should be no `enabled=0` under `[io4]`.
 ### If you are using IO4 Input
 - Open `segatools.ini` file. Check there's `enabled=0` under `[io4]`.
