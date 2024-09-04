@@ -82,7 +82,9 @@ If not, modify or add `enable` to enable it.
 
 ![](</attachment/image/NoAimeReader_1.png>)
 
-And open `DEVICE` folder, and create `aime.txt` with 20 random number like below.
+And open `DEVICE` folder, and create `aime.txt` with 20 random number like below. 
+This is the Access Code from your Aime card if you have one. If you plan on setting up an aime reader for it, use that.
+
 Using same value with below is **NOT RECOMMENDED**.
 
 ![](</attachment/image/NoAimeReader_2.png>)  
