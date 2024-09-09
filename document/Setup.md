@@ -38,20 +38,21 @@ Then your device manager should be look like this.
 Default controller driver uses keyboard input. Which is really slow.
 So updating driver is recommended, specifically IO4 input.
 
-[Here](https://youtu.be/qDsitksnLpw)'s updating tutoral video.
-Tutorial video also includes about installing MelonLoader Mod for HID Input.  
-To just install IO4 input, follow only using ISPTool part, and ignore MelonLoader installing.
+[Here](https://youtu.be/qDsitksnLpw)'s updating tutoral video.  
+Tutorial video explains how to update driver to HID Input and installing MelonLoader.  
+If you want to update to other driver, just use other driver file and follow same steps.  
+If you are not going to install HID Driver, follow only using driver updating part (with ISPTool). Just ignore MelonLoader install part.
 
-[ISPTool program](</attachment/file/driver/ISPTool.zip> "download")  
-[MelonLoader + HID Input Mod](</attachment/file/driver/MelonLoader.zip> "download")  
+[Download ISPTool program](</attachment/file/driver/ISPTool.zip> "download")  
+[Download MelonLoader + HID Input Mod](</attachment/file/driver/MelonLoader.zip> "download")  
 
-- [IO4 Driver](</attachment/file/driver/WM_DX_V3.04-IO4-1P.bin> "download")
+- IO4 Driver [(download)](</attachment/file/driver/WM_DX_V3.04-IO4-1P.bin> "download")
 	- After you update it, open `segatools.ini` and go to `[io4]`, add `enable=0` below it like following.
 	- ![](</attachment/image/Update driver_IO4_segatools_ini.png>)
-- [HID Driver](</attachment/file/driver/WM_DX_V3.00-HID-1P.bin> "download")
+- HID Driver [(download)](</attachment/file/driver/WM_DX_V3.00-HID-1P.bin> "download")
 	- After you update it, make sure there's no `enable=0` under `io4` in `segatools.ini` file.
 	- You should install MelonLoader mod to use it.
-- [Keyboard Driver](</attachment/file/driver/WM_DX_V3.00-1P.bin> "download")
+- Keyboard Driver [(download)](</attachment/file/driver/WM_DX_V3.00-1P.bin> "download")
 	- After you update it, make sure there's no `enable=0` under `io4` in `segatools.ini` file.
 
 After all, you should check once more that device's port is same as step 2.
