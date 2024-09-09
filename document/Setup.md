@@ -39,7 +39,8 @@ Default controller driver uses keyboard input. Which is really slow.
 So updating driver is recommended, specifically IO4 input.
 
 [Here](https://youtu.be/qDsitksnLpw)'s updating tutoral video.
-Tutorial video also includes about installing MelonLoader Mod for HID Input. To just install IO4 input, just ignore it.
+Tutorial video also includes about installing MelonLoader Mod for HID Input.  
+To just install IO4 input, follow only using ISPTool part, and ignore MelonLoader installing.
 
 [ISPTool program](</attachment/file/driver/ISPTool.zip> "download")  
 [MelonLoader + HID Input Mod](</attachment/file/driver/MelonLoader.zip> "download")  
