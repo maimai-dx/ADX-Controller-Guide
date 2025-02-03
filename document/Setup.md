@@ -138,9 +138,10 @@ To setup online server, just open `segatools.ini`, and change `[dns]`'s `[defaul
 
 Here's the list of online servers.
 
-| URL        | Supported Version | WebUI |
-| ---------- | ----------------- | ----- |
-| ea.msm.moe | ?                 | ?     |
+| URL              | Supported Version | WebUI                   | Note                         |
+| ---------------- | ----------------- | ----------------------- | ---------------------------- |
+| aquadx.hydev.org | Prism             | https://aquadx.net/home | follow instructions in WebUI |
+| ea.msm.moe       | ?                 | ?                       |                              |
 
 ### Setup [ARTEMiS](https://gitea.tendokyu.moe/Hay1tsme/artemis)
 
