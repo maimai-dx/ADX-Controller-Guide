@@ -25,7 +25,7 @@ And change the ports of device by following step.
 3. Replug it.
 4. Open `mai2.ini` file, and change following values below `[AM]`.
 ```
-Target=1
+Target=0
 DummyTouchPanel=0
 DummyLED=0
 ```
