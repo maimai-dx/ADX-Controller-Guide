@@ -40,19 +40,23 @@ So updating driver is recommended, specifically IO4 input.
 
 [Here](https://youtu.be/qDsitksnLpw)'s updating tutoral video.  
 Tutorial video explains how to update driver to HID Input and installing MelonLoader.  
-If you want to update to other driver, just use other driver file and follow same steps.  
-If you are not going to install HID Driver, follow only using driver updating part (with ISPTool). Just ignore MelonLoader install part.
+If you are using rounded ADX-Controller(v3+), update using `WM_DX_V4.07-COMP.bin` driver.
+If you are using angled ADX-Controller(v1), update using `WM_DX_V4.07-COMP-reverse.bin` driver.
+If you are not going to use HID Driver, ignore installing MelonLoader in video.
 
-[Download ISPTool program](</attachment/file/driver/ISPTool.zip> "download")  
+[Download ADX 4.07.zip (ISPTool + 4.07Driver + ConfigApp 1.0.0.18)](</attachment/file/ADX 4.07.zip> "download")  
 [Download MelonLoader + HID Input Mod](</attachment/file/driver/MelonLoader.zip> "download")  
 
-- IO4 Driver [(download)](</attachment/file/driver/WM_DX_V3.04-IO4-1P.bin> "download")
-	- After you update it, open `segatools.ini` and go to `[io4]`, add `enable=0` below it like following.
+Then change the input type to IO4.
+After you update it, open `segatools.ini` and go to `[io4]` section. 
+add `enable=0` below it like following.
 	- ![](</attachment/image/Update driver_IO4_segatools_ini.png>)
-- HID Driver [(download)](</attachment/file/driver/WM_DX_V3.00-HID-1P.bin> "download")
+
+But if you want to use other input types, you can follow these. (not recommended)
+- If you want to use **HID** input
 	- After you update it, make sure there's no `enable=0` under `io4` in `segatools.ini` file.
 	- You should install MelonLoader mod to use it.
-- Keyboard Driver [(download)](</attachment/file/driver/WM_DX_V3.00-1P.bin> "download")
+- If you want to use **Keyboard** input
 	- After you update it, make sure there's no `enable=0` under `io4` in `segatools.ini` file.
 
 After all, you should check once more that device's port is same as step 2.
@@ -61,7 +65,8 @@ After all, you should check once more that device's port is same as step 2.
 
 ### 4. Adjust touch sensitivity
 
-Default touch setting is not good. So adjusting touch sensitivity using [ConfigApp](</attachment/file/ConfigApp_V1.0.0.3-20231203.zip> "download") is recommended.
+Default touch setting is not good. So adjusting touch sensitivity using ConfigApp is recommended.
+ConfigApp is integrated in [ADX 4.07.zip](</attachment/file/ADX 4.07.zip> "download") file.
 Make sure close the game and re-plug the controller before running this program.
 Using it in fullscreen mode is recommended.
 After exiting the program, plug and unplug the USB again
