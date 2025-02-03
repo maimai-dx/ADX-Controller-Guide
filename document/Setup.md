@@ -40,8 +40,7 @@ So updating driver is recommended, specifically IO4 input.
 
 [Here](https://youtu.be/qDsitksnLpw)'s updating tutoral video.  
 Tutorial video explains how to update driver to HID Input and installing MelonLoader.  
-If you are using rounded ADX-Controller(v3+), update using `WM_DX_V4.07-COMP.bin` driver.
-If you are using angled ADX-Controller(v1), update using `WM_DX_V4.07-COMP-reverse.bin` driver.
+Update the controller using `WM_DX_V4.07-COMP.bin` driver. If button input comes wrong, update again using `WM_DX_V4.07-COMP-reverse.bin` driver.
 If you are not going to use HID Driver, ignore installing MelonLoader in video.
 
 [Download ADX 4.07.zip (ISPTool + 4.07Driver + ConfigApp 1.0.0.18)](</attachment/file/ADX 4.07.zip> "download")  
